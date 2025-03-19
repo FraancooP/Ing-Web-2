@@ -1,0 +1,38 @@
+.vector{
+    padding-bottom: 100px;
+}
+.vector img{
+    width: 359.5px;
+    height: 203.86px;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    height: 187px;
+    width: 255px;
+}
+.logoLogin{
+    text-align: center;
+    padding-top: 50px;
+}
+.logoLogin img{
+    width: 128.18px;
+    height: 94px;
+}
+.inputs{
+    padding-top: 100px;
+    text-align: center;
+}
+.inputs .usuario{
+    height: 25px;
+    display: flex;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: gray;
+}
+.inputs .contraseña{
+    display: flex;
+    margin: 5px;
+    border-radius: 20px;
+}
