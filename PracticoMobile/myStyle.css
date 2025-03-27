@@ -125,7 +125,9 @@
 /*Esto es Transferencia*/
 /*Esto es NAV MENU DE TRANSFERENCIA*/
 #nav-volver{
-    /*position: fixed ;*/
+    transform: translateX(-50%);
+    left: 50%;
+    position: fixed ;
     width: 360px;
     height: 30px;
     align-items: center;
@@ -134,6 +136,7 @@
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
 }
 #nav-volver button{
+    margin-left: 13px;
     width: 24px;
     height: 24px;
     background: none;
@@ -149,7 +152,7 @@
     height: 14px;
 }
 #nav-volver .logo-volver{
-    padding-left: 194px;
+    padding-left: 231px;
 }
 #nav-volver p{
     color: #17171A;
@@ -164,7 +167,7 @@
 }
 /*Esto es NAV MENU DE TRANSFERENCIA*/
 #transferencia{
-    margin-top: 100.27px;
+    padding-top: 56px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -174,8 +177,8 @@
     display: flex;
 }
 #transferencia .dinero-dis{
-    margin-top: 86px;
-    width: 311px;
+    margin-top: 36px;
+    width: 315px;
     height: 96px;
     border-radius: 10px;
     background-image: url(/assets/Card\ 1.svg);
@@ -253,6 +256,9 @@
     padding-top: 21px;
     margin: 0;
 }
+/*Esta parte es del boton de esta pantalla, notar que es lo mismo que el boton de 
+login, por lo que podemos reutirilizar ese codigo para no duplicar...
+*/
 #transferencia .boton-siguiente{
     margin-top: 257px;
     width: 285px;
