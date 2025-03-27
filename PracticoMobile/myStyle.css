@@ -3,84 +3,94 @@
     margin: 0;
     padding: 0;
 }
-#splashScreen img{
-    width: 359.5px;
+#splash-screen{
+    display: flex;
 }
-.vector{
-    padding-bottom: 100px;
-}
-.logo{
+#splashScreen .logo{
     text-align: center;
 }
-.logo img{
-    height: 187px;
+#splashScreen .logo img{
     width: 255px;
+    height: 187px;
 }
-/*Esto es el main de inicio sesion*/
+#splashScreen .vector{
+    padding-bottom: 103.14px;
+}
+#splashScreen .vector img{
+    width: 359.5px;
+    height: 203.861px;
+}
+/*Esto es splassh screen+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Esto es el login*/
 #inicioSesion{
-    display: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #FFF;
-    width: 100%;
-    height: 100%;
 }
-.logoLogin{
+#inicioSesion .logoLogin {
     margin-top: 103px;
     margin-bottom: 118px;
 }
-.loginform{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#inicioSesion .logoLogin img{
+    width: 128.182px;
+    height: 94px;
 }
 
-.usuario, .contraseña{
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
+#inicioSesion .usuario,#inicioSesion .contraseña{
+    align-items: center;/*Logramos que las imagenes queden bien respecto los inputs*/
+    display: flex;/*Logramos que el input ocupe todo el div*/
     width: 333px;
     height: 50px;
-    display: flex;
     border-radius: 10px;
-    padding-left: 10px;
 }
-.usuario{
-    margin-bottom: 10px;
+#inicioSesion .usuario img, #inicioSesion .contraseña img{
+    width: 24px;
+    height: 24px;
+}
+#inicioSesion .usuario input, #inicioSesion .contraseña input{
+    flex: 1;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: #535353;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding-left: 15px;
+}
+#inicioSesion .usuario{
     background: rgba(48, 63, 159, 0.20);
+    margin-bottom: 10px;
 }
-.contraseña{
+#inicioSesion .contraseña{
     background: #F7F7F7;
     margin-bottom: 16px;
 }
-.usuario img, .contraseña img{
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+#inicioSesion .forgotpass{/*Contenedor que por defecto ocupa sus items a la derecha*/
+    display: flex;
+    justify-content: flex-end
 }
-.usuario input, .contraseña input{
-    flex: 1;
-    height: 100%;
-    border: none;
-    background: transparent;
-    outline: none;
-    font-size: 16px;
-}
-.loginform a{
-    align-self: flex-end;
+#inicioSesion .forgotpass a{
+    color: rgba(28, 25, 57, 0.80);
+    text-decoration: none;
     color: rgba(28, 25, 57, 0.80);
     font-family: Lato;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    text-decoration: none;
-    margin-bottom: 60px;
 }
-.loginform .botonIniciar{
+#inicioSesion .botonIniciar{/*Notar que se crea contenedor BOTON*/
+    margin-top: 60px;
     width: 333px;
     height: 60px;
+    margin-bottom: 21px;
+}
+#inicioSesion .botonIniciar button{/*Hacemos que el boton ocupe todo el contenedor*/
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     background: #311B92;
     color: #FFF;
@@ -90,12 +100,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-bottom: 21px;
-    cursor: pointer;
 }
-#inicioSesion p{
-    margin: 0;
-    padding: 0;
+#inicioSesion .noneaccount p{
     color: rgba(28, 25, 57, 0.80);
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
@@ -105,7 +111,8 @@
     font-weight: 400;
     line-height: 25px; /* 166.667% */
 }
-#inicioSesion p a{
+#inicioSesion .noneaccount a{
+    text-decoration: none;
     color: rgba(28, 25, 57, 0.80);
     font-feature-settings: 'liga' off, 'clig' off;
     font-family: Lato;
@@ -113,5 +120,161 @@
     font-style: normal;
     font-weight: 700;
     line-height: 25px;
-    text-decoration: none;
+}
+/*Esto es el login+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*Esto es Transferencia*/
+/*Esto es NAV MENU DE TRANSFERENCIA*/
+#nav-volver{
+    /*position: fixed ;*/
+    width: 360px;
+    height: 30px;
+    align-items: center;
+    display: flex;
+    background: #FFF;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+#nav-volver button{
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#nav-volver button img{
+    width: 100%;
+    height: 100%;
+}
+#nav-volver .logo-volver img{
+    width: 30px;
+    height: 14px;
+}
+#nav-volver .logo-volver{
+    padding-left: 194px;
+}
+#nav-volver p{
+    color: #17171A;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'dlig' on;
+    font-family: Montserrat;
+    font-size: 12.233px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17.476px; /* 142.857% */
+    letter-spacing: 0.122px; 
+}
+/*Esto es NAV MENU DE TRANSFERENCIA*/
+#transferencia{
+    margin-top: 100.27px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFF;
+}
+#transferencia .text-trans{
+    display: flex;
+}
+#transferencia .dinero-dis{
+    margin-top: 86px;
+    width: 311px;
+    height: 96px;
+    border-radius: 10px;
+    background-image: url(/assets/Card\ 1.svg);
+    background-size: cover;
+}
+#transferencia .dinero-dis p{
+    margin-top: 17px;
+    margin-left: 17px;
+    margin-bottom: 16px;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#transferencia .dinero-dis h1{
+    margin-left: 17px;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#transferencia .text-trans{
+    margin-right: 168px;
+    margin-left: 21px;
+}
+#transferencia .text-trans p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+#transferencia .transferencia-destino{
+    width: 315px;
+    height: 41px;
+    background-color: #1F1F1F;
+    margin-top: 16px;
+    border-radius: 10px 10px 0px 0px;
+}
+#transferencia .transferencia-destino p{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    margin-left: 18px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#transferencia .transferencia-destino .div-destinos{
+    width: 315px;
+    height: 139px;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(255, 255, 255, 0.60);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+#transferencia .transferencia-destino .div-destinos input{
+    display: flex;
+}
+#transferencia .transferencia-destino .div-destinos div p{
+    color: #4D4D4D;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 18px;
+    padding-top: 21px;
+    margin: 0;
+}
+#transferencia .boton-siguiente{
+    margin-top: 257px;
+    width: 285px;
+    height: 51.351px;
+    border-radius: 8.559px;
+    background: #311B92;
+}
+#transferencia .boton-siguiente button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14.55px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+}
+#transferencia .boton-siguiente button:hover{
+    background-color: #2E156B;
+    border-radius: 8.559px;
 }
