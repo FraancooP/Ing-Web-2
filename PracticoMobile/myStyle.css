@@ -5,7 +5,7 @@
 }
 #splash-screen{
     display: flex;
-    transition: opacity 1s ease-in-out, visibility 1s;
+    transition: opacity 2.5s ease-in-out, visibility 2.5s;
 }
 .hidden {
     opacity: 0;
@@ -105,6 +105,11 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+#inicioSesion .botonIniciar button:hover{
+    background-color: #2E156B;
+    border-radius: 8.559px;
+
 }
 #inicioSesion .noneaccount p{
     color: rgba(28, 25, 57, 0.80);
@@ -222,14 +227,14 @@
     line-height: normal;
     text-transform: capitalize;
 }
-#transferencia .transferencia-destino{
+#transferencia #transferencia-destino{
     width: 315px;
     height: 41px;
     background-color: #1F1F1F;
     margin-top: 16px;
     border-radius: 10px 10px 0px 0px;
 }
-#transferencia .transferencia-destino p{
+#transferencia #transferencia-destino p{
     margin-top: 13px;
     margin-bottom: 13px;
     margin-left: 18px;
@@ -240,17 +245,17 @@
     font-weight: 700;
     line-height: normal;
 }
-#transferencia .transferencia-destino .div-destinos{
+#transferencia #transferencia-destino .div-destinos{
     width: 315px;
     height: 139px;
     border-radius: 0px 0px 10px 10px;
     background: rgba(255, 255, 255, 0.60);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
 }
-#transferencia .transferencia-destino .div-destinos input{
+#transferencia #transferencia-destino .div-destinos input{
     display: flex;
 }
-#transferencia .transferencia-destino .div-destinos div p{
+#transferencia #transferencia-destino .div-destinos div p{
     color: #4D4D4D;
     font-family: Montserrat;
     font-size: 12px;
@@ -288,4 +293,21 @@ login, por lo que podemos reutirilizar ese codigo para no duplicar...
 #transferencia .boton-siguiente button:hover{
     background-color: #2E156B;
     border-radius: 8.559px;
+}
+#barra-progreso{
+    display: none;
+    font-size: 0;
+    margin-top: 36.09px;
+}
+.barrapading{
+    padding-bottom: 10px;
+}
+#progreso-1{
+    display: none;
+}
+#progreso-2{
+    display: none;
+}
+#progreso-3{
+    display: none;
 }

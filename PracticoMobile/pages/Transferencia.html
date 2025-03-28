@@ -9,18 +9,41 @@
 <body>
     <div id="nav-volver">
         <div class="boton-volver">
-            <button><img src="/assets/logoVolver.svg" alt=""></button>
+            <button onclick="back_Step()"><img src="/assets/logoVolver.svg" alt=""></button>
         </div>
         <div class="logo-volver"><img src="/assets/Logo.svg" alt=""></div>
         <p>WIBOND</p>
     </div>
-    <div id="transferencia">
+    <div id="transferencia">                                                                                                                                                                                                                                                                                        
         <div class="text-trans"><p>Transferir Dinero</p></div>
+        <div id="barra-progreso">                                                                                                               
+            <div id="progreso-1">
+                <img src="/assets/enprogreso.svg" alt="">
+                <img src="/assets/barra-gris.svg" alt="" class="barrapading">
+                <img src="/assets/incompleto.svg" alt="">
+                <img src="/assets/barra-gris.svg" alt="" class="barrapading">
+                <img src="/assets/incompleto.svg" alt="">
+            </div>
+            <div id="progreso-2">
+                <img src="/assets/realizado.svg" alt="">                                                                                                                                                                                                                                                                                                        
+                <img src="/assets/barra-verde.svg" alt="" class="barrapading">
+                <img src="/assets/enprogreso.svg" alt="">
+                <img src="/assets/barra-gris.svg" alt="" class="barrapading">
+                <img src="/assets/incompleto.svg" alt="">
+            </div>
+            <div id="progreso-3">
+                <img src="/assets/realizado.svg" alt="">
+                <img src="/assets/barra-verde.svg" alt="" class="barrapading">
+                <img src="/assets/realizado.svg" alt="">
+                <img src="/assets/barra-verde.svg" alt="" class="barrapading">
+                <img src="/assets/enprogreso.svg" alt="">
+            </div>
+        </div>
         <div class="dinero-dis">
             <p>Dinero Disponible</p>
             <h1>ARS $12312</h1>
         </div>
-        <div class="transferencia-destino">
+        <div id="transferencia-destino">
             <p>Tipo de destino</p>
             <div class="div-destinos">
                 <div>
@@ -34,9 +57,9 @@
             </div>
         </div>
         <div class="boton-siguiente">
-            <button>Siguiente</button>
+            <button onclick="stepPreview()">Siguiente</button>
         </div>
     </div>
-    
+    <script src="../script.js"></script>
 </body>
 </html>
