@@ -5,6 +5,11 @@
 }
 #splash-screen{
     display: flex;
+    transition: opacity 1s ease-in-out, visibility 1s;
+}
+.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 #splashScreen .logo{
     text-align: center;
@@ -23,7 +28,7 @@
 /*Esto es splassh screen+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /*Esto es el login*/
 #inicioSesion{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
