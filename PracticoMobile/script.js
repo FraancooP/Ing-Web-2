@@ -25,11 +25,13 @@ function stepPreview(){
         document.getElementById("progreso-2").style.display = "none"
         document.getElementById("progreso-3").style.display = "none"
         document.getElementById("transferencia-destino").style.display = "none"
+        document.getElementById("tipo-cuenta").style.display = "block"
     }
     if(current_step == 2){
         document.getElementById("progreso-1").style.display = "none"
         document.getElementById("progreso-2").style.display = "block"
         document.getElementById("progreso-3").style.display = "none"
+        document.getElementById("tipo-cuenta").style.display = "none"
     }
     if(current_step ==3 ){
         document.getElementById("progreso-1").style.display = "none"
@@ -45,11 +47,13 @@ function back_Step(){
         document.getElementById("barra-progreso").style.display = "none"
         document.getElementById("progreso-1").style.display = "none"
         document.getElementById("transferencia-destino").style.display = "block"
+        document.getElementById("tipo-cuenta").style.display = "none"
         current_step--
     }
     if(current_step == 2){
         document.getElementById("progreso-2").style.display = "none"
         document.getElementById("progreso-1").style.display = "block"
+        document.getElementById("tipo-cuenta").style.display = "block"
         current_step--
     }
     if(current_step == 3){

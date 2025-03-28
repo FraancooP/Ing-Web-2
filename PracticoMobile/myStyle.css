@@ -227,14 +227,17 @@
     line-height: normal;
     text-transform: capitalize;
 }
-#transferencia #transferencia-destino{
+#transferencia #transferencia-destino, #transferencia #tipo-cuenta{
     width: 315px;
     height: 41px;
     background-color: #1F1F1F;
     margin-top: 16px;
     border-radius: 10px 10px 0px 0px;
 }
-#transferencia #transferencia-destino p{
+#transferencia #tipo-cuenta{
+    display: none;
+}
+#transferencia #transferencia-destino p, #transferencia #tipo-cuenta p{
     margin-top: 13px;
     margin-bottom: 13px;
     margin-left: 18px;
@@ -245,7 +248,7 @@
     font-weight: 700;
     line-height: normal;
 }
-#transferencia #transferencia-destino .div-destinos{
+#transferencia #transferencia-destino .div-destinos, #transferencia #tipo-cuenta .div-tipo-cuenta{
     width: 315px;
     height: 139px;
     border-radius: 0px 0px 10px 10px;
@@ -254,8 +257,9 @@
 }
 #transferencia #transferencia-destino .div-destinos input{
     display: flex;
+    align-items: center;
 }
-#transferencia #transferencia-destino .div-destinos div p{
+#transferencia #transferencia-destino .div-destinos div p, #transferencia #tipo-cuenta .div-tipo-cuenta div p{
     color: #4D4D4D;
     font-family: Montserrat;
     font-size: 12px;
